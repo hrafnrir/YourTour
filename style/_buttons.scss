@@ -48,16 +48,16 @@
 				top: 9px;
 				right: 20px;
 			}
-		}
-		.tour-item__btn:active & {
-			background-color: $orange-200;
-			padding: 7px 20px;
-			padding-right: 60px;
-			border-radius: 50px;
-		}
-		.tour-item:active &:after {
-			top: 9px;
-			right: 20px;
+			.tour-item__btn:active & {
+				background-color: $orange-200;
+				padding: 7px 20px;
+				padding-right: 60px;
+				border-radius: 50px;
+			}
+			.tour-item:active &:after {
+				top: 9px;
+				right: 20px;
+			}
 		}
 	}
 	@else if $class == story-item {
@@ -72,16 +72,16 @@
 				top: 9px;
 				right: 20px;
 			}
-		}
-		.story-item__btn:active & {
-			background-color: $orange-200;
-			padding: 7px 20px;
-			padding-right: 60px;
-			border-radius: 50px;
-		}
-		.story-item:active &:after {
-			top: 9px;
-			right: 20px;
+			.story-item__btn:active & {
+				background-color: $orange-200;
+				padding: 7px 20px;
+				padding-right: 60px;
+				border-radius: 50px;
+			}
+			.story-item:active &:after {
+				top: 9px;
+				right: 20px;
+			}
 		}
 	}
 }
