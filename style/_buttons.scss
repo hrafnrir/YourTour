@@ -1,0 +1,119 @@
+
+%btn-more {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+%btn-more-content {
+	position: absolute;
+	@include mob-p-big;
+	color: $white;
+	vertical-align: middle;
+	padding-right: 41px;
+	&:after {
+		content: "";
+		position: absolute;
+		top: -2px;
+		right: 0;
+		width: 24px;
+		height: 26px;
+		background-image: url("../img/icons/arrow bt.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		@include breakpoint(medium) {
+			top: 2px;
+		}
+	}
+	@include breakpoint(medium) {
+		@include p-big;
+		padding-right: 40px;
+	}
+}
+
+@mixin btn-more-content-state($class) {
+	@if $class == tour-item {
+		@include breakpoint(large) {
+			.tour-item:hover & {
+				background-color: $green-400;
+				padding: 7px 20px;
+				padding-right: 60px;
+				border-radius: 50px;
+			}
+			.tour-item:hover &:after {
+				top: 9px;
+				right: 20px;
+			}
+		}
+		.tour-item__btn:active & {
+			background-color: $orange-200;
+			padding: 7px 20px;
+			padding-right: 60px;
+			border-radius: 50px;
+		}
+		.tour-item:active &:after {
+			top: 9px;
+			right: 20px;
+		}
+	}
+	@else if $class == story-item {
+		@include breakpoint(large) {
+			.story-item:hover & {
+				background-color: $green-400;
+				padding: 7px 20px;
+				padding-right: 60px;
+				border-radius: 50px;
+			}
+			.story-item:hover &:after {
+				top: 9px;
+				right: 20px;
+			}
+		}
+		.story-item__btn:active & {
+			background-color: $orange-200;
+			padding: 7px 20px;
+			padding-right: 60px;
+			border-radius: 50px;
+		}
+		.story-item:active &:after {
+			top: 9px;
+			right: 20px;
+		}
+	}
+}
+
+%text-link {
+	color: $black;
+	@include breakpoint(large) {
+		&:hover {
+			margin-bottom: -1px;
+			border-bottom: 1px solid $black;
+		}
+	}
+	&:active {
+		color: $green-400;
+		margin-bottom: -1px;
+		border-bottom: 1px solid $green-400;
+	}
+}
+
+%btn-form {
+	@include mob-p-normal;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	width: 134px;
+	border-radius: 10px;
+	@include breakpoint(medium) {
+		@include p-normal;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		width: 235px;
+	}
+	@include breakpoint(large) {
+		cursor: pointer;
+	}
+}
