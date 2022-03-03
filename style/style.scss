@@ -613,16 +613,16 @@ body {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url("../img/icons/radiobutton-1.png");
+		background-image: url("../img/icons/radiobutton-1.svg");
 		background-position: left center;
 		background-repeat: no-repeat;
 		@include breakpoint(medium) {
-			background-image: url("../img/icons/radiobutton-3.png");
+			background-image: url("../img/icons/radiobutton-3.svg");
 		}
 		.tour-form__radio:checked + & {
-			background-image: url("../img/icons/radiobutton-2.png");
+			background-image: url("../img/icons/radiobutton-2.svg");
 			@include breakpoint(medium) {
-				background-image: url("../img/icons/radiobutton-4.png");
+				background-image: url("../img/icons/radiobutton-4.svg");
 			}
 		}
 	}
@@ -663,18 +663,18 @@ body {
 		left: 0;
 		width: 20px;
 		height: 20px;
-		background-image: url("../img/icons/checkbox-1.png");
+		background-image: url("../img/icons/checkbox-1.svg");
 		background-position: top;
 		background-repeat: no-repeat;
 		@include breakpoint(medium) {
 			width: 26px;
 			height: 26px;
-			background-image: url("../img/icons/checkbox-3.png");
+			background-image: url("../img/icons/checkbox-3.svg");
 		}
 		.tour-form__checkbox:checked + & {
-			background-image: url("../img/icons/checkbox-2.png");
+			background-image: url("../img/icons/checkbox-2.svg");
 			@include breakpoint(medium) {
-				background-image: url("../img/icons/checkbox-4.png");
+				background-image: url("../img/icons/checkbox-4.svg");
 			}
 		}
 	}
