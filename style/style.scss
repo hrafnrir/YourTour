@@ -111,43 +111,28 @@ body {
 }
 
 .header-menu__link {
+	@extend %header-link;
 	@include breakpoint(medium) {
 		display: inline-block;
-		&_unfixed-header {
-			color: $white;
-			@include breakpoint(large) {
-				&:hover {
-					border-bottom-color: $white;
-				}
-			}
-		}
-		&_fixed-header {
-			color: $black;
-			@include breakpoint(large) {
-				&:hover {
-					border-bottom-color: $black;
-				}
-			}
-		}
-		@include breakpoint(large) {
-			&:hover {
-				margin-bottom: -1px;
-				border-bottom-width: 1px;
-				border-bottom-style: solid;
-			}
-		}
+	}
+	&_unfixed-header {
+		@extend %header-link_unfixed-header;
+	}
+	&_fixed-header {
+		@extend %header-link_fixed-header;
 	}
 }
 
 .header-top__phone {
-	&_unfixed-header {
-		color: $white;
-	}
-	&_fixed-header {
-		color: $black;
-	}
+	@extend %header-link;
 	@include breakpoint(medium) {
 		margin-left: 20px;
+	}
+	&_unfixed-header {
+		@extend %header-link_unfixed-header;
+	}
+	&_fixed-header {
+		@extend %header-link_fixed-header;
 	}
 }
 

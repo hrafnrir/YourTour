@@ -1,3 +1,30 @@
+%header-link {
+	@include breakpoint(large) {
+		&:hover {
+			margin-bottom: -1px;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+		}
+	}
+}
+
+%header-link_unfixed-header {
+	color: $white;
+	@include breakpoint(large) {
+		&:hover {
+			border-bottom-color: $white;
+		}
+	}
+}
+
+%header-link_fixed-header {
+	color: $black;
+	@include breakpoint(large) {
+		&:hover {
+			border-bottom-color: $black;
+		}
+	}
+}
 
 %btn-more {
 	display: block;
