@@ -868,6 +868,12 @@ body {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 1025px) {
+  .tour-form__label:hover + .tour-form__field {
+    background-color: #F9F7F4;
+  }
+}
+
 .tour-form__field {
   font-family: Roboto, Arial, sans-serif;
   font-weight: 400;
@@ -890,7 +896,7 @@ body {
 
 .tour-form__field:focus {
   color: #1B1F2B;
-  background-color: #F4F0E9;
+  background-color: #F4F0E9 !important;
   border-color: #A6A6A6;
 }
 

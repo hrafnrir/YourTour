@@ -489,6 +489,11 @@ body {
 	width: 100%;
 	color: $black;
 	margin-bottom: 8px;
+	@include breakpoint(large) {
+		&:hover + .tour-form__field {
+			background-color: $biege-100;
+		}
+	}
 }
 
 .tour-form__field {
@@ -506,7 +511,7 @@ body {
 	}
 	&:focus {
 		color: $black;
-		background-color: $biege-200;
+		background-color: $biege-200 !important;
 		border-color: $gray-300;
 		&::placeholder {
 			opacity: 0;
