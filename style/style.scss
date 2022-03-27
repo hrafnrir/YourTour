@@ -543,6 +543,9 @@ body {
 	@include breakpoint(large) {
 		cursor: pointer;
 	}
+	&:not(:focus) {
+		color: $black;		
+	}
 	&:invalid:not(:focus) {
 		color: $gray-300;		
 	}

@@ -968,6 +968,10 @@ body {
   }
 }
 
+.trip-field:not(:focus) {
+  color: #1B1F2B;
+}
+
 .trip-field:invalid:not(:focus) {
   color: #A6A6A6;
 }
