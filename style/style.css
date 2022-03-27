@@ -1011,6 +1011,7 @@ body {
 
 .tour-form__radio {
   opacity: 0;
+  z-index: -1;
   position: absolute;
 }
 
@@ -1078,6 +1079,7 @@ body {
 
 .tour-form__checkbox {
   opacity: 0;
+  z-index: -1;
   position: absolute;
 }
 
