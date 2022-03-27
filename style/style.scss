@@ -528,7 +528,6 @@ body {
 }
 
 .trip-field {
-	color: $gray-300;
 	height: 46px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -537,9 +536,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: 26px;
 	background-position: right 9px center;
-	&:focus {
-		color: $gray-300;
-	}
 	@include breakpoint(medium) {
 		background-position: right 20px center;
 		height: 68px;
@@ -547,12 +543,17 @@ body {
 	@include breakpoint(large) {
 		cursor: pointer;
 	}
-}
-
-.trip-field__option {
-	color: $black;
-	&_default {
-		display: none;
+	&:invalid:not(:focus) {
+		color: $gray-300;		
+	}
+	&:invalid:focus {
+		color: $black;		
+	}
+	&:focus {
+		color: $black;
+	}
+	&:focus .trip-field__option {
+		color: $black;
 	}
 }
 

@@ -945,7 +945,6 @@ body {
 }
 
 .trip-field {
-  color: #A6A6A6;
   height: 46px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -954,10 +953,6 @@ body {
   background-repeat: no-repeat;
   background-size: 26px;
   background-position: right 9px center;
-}
-
-.trip-field:focus {
-  color: #A6A6A6;
 }
 
 @media screen and (min-width: 481px) {
@@ -973,12 +968,20 @@ body {
   }
 }
 
-.trip-field__option {
+.trip-field:invalid:not(:focus) {
+  color: #A6A6A6;
+}
+
+.trip-field:invalid:focus {
   color: #1B1F2B;
 }
 
-.trip-field__option_default {
-  display: none;
+.trip-field:focus {
+  color: #1B1F2B;
+}
+
+.trip-field:focus .trip-field__option {
+  color: #1B1F2B;
 }
 
 .date-field {
